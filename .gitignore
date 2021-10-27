@@ -32,6 +32,20 @@ yarn-error.log*
 
 # vercel
 .vercel
+# yarn 3.x
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.vscode
 
 # typescript
 *.tsbuildinfo
+
+.yarn/
+
+*.cjs
