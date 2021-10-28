@@ -1,9 +1,13 @@
+import Navbar from "../components/Navbar";
+
 const Home = () => {
   return (
     <div>
-      Hello World
-    </div>
-  )
-}
+      <Navbar />
 
-export default Home
+      
+    </div>
+  );
+};
+
+export default Home;
