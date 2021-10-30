@@ -375,6 +375,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/aspect-ratio@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@tailwindcss/aspect-ratio@npm:0.3.0"
+  peerDependencies:
+    tailwindcss: ">=2.0.0 || >=3.0.0-alpha.1"
+  checksum: f863da71ba3920ebcb96057ca9d446b0b40addbcd0b6c0631fc33625eaeb10c8aeb92f333bb8bae2db2fd025d9895e06582fce2d1fb2e35420a27bb0a6f994f7
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -548,6 +557,13 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 1860f23c2107c910c6177b7b7be71be350db9e1080d814493fae143ae37605189504152d1ba8743ba3178d0b37269ce1ffc42b101547fdc1827078f82671e407
+  languageName: node
+  linkType: hard
+
+"add@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "add@npm:2.0.6"
+  checksum: e2d23d40494565dfed4acd65e478570c444db5ac6c053551ed429c39ea0f2c99d83df63e7befec936df601827d2254d06a2fb6f7dcfd2022e810b25eab818b8c
   languageName: node
   linkType: hard
 
@@ -3969,8 +3985,10 @@ __metadata:
   resolution: "portfolio@workspace:."
   dependencies:
     "@headlessui/react": ^1.4.1
+    "@tailwindcss/aspect-ratio": ^0.3.0
     "@types/node": 16.11.6
     "@types/react": 17.0.33
+    add: ^2.0.6
     autoprefixer: latest
     daisyui: ^1.16.0
     eslint: 7
@@ -3982,6 +4000,7 @@ __metadata:
     react-icons: ^4.3.1
     tailwindcss: latest
     typescript: 4.4.4
+    yarn: ^1.22.17
   languageName: unknown
   linkType: soft
 
@@ -5376,6 +5395,16 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yarn@npm:^1.22.17":
+  version: 1.22.17
+  resolution: "yarn@npm:1.22.17"
+  bin:
+    yarn: ./bin/yarn.js
+    yarnpkg: ./bin/yarn.js
+  checksum: 9d5211477d439a4d7b5632d7c290a3be36d2edc13599b64964bff520d3a3a480db85010f3262293981abb4e618ac92aaafa4c4c54bae50a7713c7b8ec431adac
   languageName: node
   linkType: hard
 

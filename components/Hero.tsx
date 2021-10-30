@@ -1,33 +1,22 @@
-import Image from 'next/image'
-const Hero = () => {
-    return (
-      <div>
-        <div className="hero  bg-base-200">
-          <div className="flex-col hero-content lg:flex-row-reverse">
-            <div className=" max-w-sm"></div>
-            <div className="h-64 w-96 relative">
-              <Image
-                src={"/tamjid.jpg"}
-                alt="Picture of the author"
-                layout="fill" // required
-                objectFit="cover"
-                priority // change to suit your needs
-                className="rounded-sm" // just an example
-              />
-            </div>
-            <div>
-              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-              <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
-              <button className="btn btn-primary">Get Started</button>
-            </div>
+
+const Hero:React.FC = () => {
+  return (
+    <div className=" bg-green-300 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 ">
+        <div className="md:col-span-2 m-auto order-last">
+          <h1 className=" text-3xl">Hi I am Tamjid Ahmed.</h1>
+          <p className="">Web Developer</p>
+          <p className=" text-lg">Stack: NextJs | Firebase | Tailwind </p>
+        </div>
+        <div className="avatar md:col-span-2 m-auto py-4">
+          <div className="rounded-full w-64 h-64 ring ring-offset-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/tamjid.jpg" alt="hey" />
           </div>
         </div>
       </div>
-    );
-}
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
