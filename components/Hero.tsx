@@ -1,7 +1,7 @@
 
 const Hero:React.FC = () => {
   return (
-    <div className=" bg-green-300 w-full">
+    <div className=" bg-green-300 w-full" id="hero">
       <div className="grid grid-cols-1 md:grid-cols-4 ">
         <div className="md:col-span-2 m-auto order-last">
           <h1 className=" text-3xl">Hi I am Tamjid Ahmed.</h1>

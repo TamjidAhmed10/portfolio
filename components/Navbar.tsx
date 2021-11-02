@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -12,10 +14,62 @@ const Navbar = () => {
           </div>
           <div className="flex-none hidden px-2 mx-2 lg:flex">
             <div className="flex items-stretch">
-              <a className="btn btn-ghost btn-sm rounded-btn">Likes</a>
-              <a className="btn btn-ghost btn-sm rounded-btn">Notifications</a>
-              <a className="btn btn-ghost btn-sm rounded-btn">Files</a>
-              <a className="btn btn-ghost btn-sm rounded-btn">Config</a>
+              <Link
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <button className="btn btn-ghost btn-sm rounded-btn">
+                  Intro
+                </button>
+              </Link>
+              <Link
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <button className="btn btn-ghost btn-sm rounded-btn">
+                  About Me
+                </button>
+              </Link>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a className="btn btn-ghost btn-sm rounded-btn">Projects</a>
+              </Link>
+              <Link
+                activeClass="active"
+                to="certification1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a className="btn btn-ghost btn-sm rounded-btn">
+                  Certification
+                </a>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contactuse"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <a className="btn btn-ghost btn-sm rounded-btn">Contact Me</a>
+              </Link>
             </div>
           </div>
 

@@ -11,16 +11,22 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@types/react-scroll": "^1.8.3",
     "add": "^2.0.6",
     "daisyui": "^1.16.0",
+    "emailjs-com": "^3.2.0",
     "next": "12.0.1",
+    "nodemailer": "^6.7.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.18.0",
     "react-icons": "^4.3.1",
+    "react-scroll": "^1.8.4",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
+    "@types/nodemailer": "^6.4.4",
     "@types/react": "17.0.33",
     "autoprefixer": "latest",
     "eslint": "7",
