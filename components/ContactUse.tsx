@@ -25,12 +25,12 @@ const ContactUse: React.FC = () => {
   };
   return (
     <>
-      <div className="py-12 card bg-gray-200" id="contactuse">
+      <div className="py-12  card bg-gray-200" id="contactuse">
         <h1 className="text-center text-3xl ">Contact Form</h1>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-96 grid grid-cols-1 text-center mx-auto form-control"
+          className="w-96 grid grid-cols-1 text-center mx-auto form-control px-4"
         >
           <label className="label">
             <span className="label-text">Name</span>
