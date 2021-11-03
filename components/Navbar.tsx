@@ -32,7 +32,12 @@ const Navbar: React.FC = () => {
         }
       >
         <div className="navbar text-black md:ml-36 md:mr-28">
-          <div className="flex-1 px-2 mx-2 cursor-pointer">
+          <div
+            className="flex-1 px-2 mx-2 cursor-pointer"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             <Link
               activeClass="active"
               to="hero"
@@ -41,7 +46,14 @@ const Navbar: React.FC = () => {
               offset={-70}
               duration={500}
             >
-              <img src="/portfoliologo.png" alt="" className="h-8 w-8 pr-1" />
+              <img
+                src="/portfoliologo.png"
+                alt=""
+                className="h-8 w-8 pr-1"
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              />
             </Link>
             <Link
               activeClass="active"
@@ -51,7 +63,12 @@ const Navbar: React.FC = () => {
               offset={-70}
               duration={500}
             >
-              <span className="text-lg font-bold">
+              <span
+                className="text-lg font-bold"
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
                 Portfolio <small className="text-xs">by Tamjid</small>
               </span>
             </Link>
@@ -125,7 +142,7 @@ const Navbar: React.FC = () => {
               duration={500}
             >
               <div
-                className="py-3 border-t-2 border-gray-600"
+                className="py-3 border-t-2 border-gray-600 cursor-pointer"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
@@ -142,7 +159,7 @@ const Navbar: React.FC = () => {
               duration={500}
             >
               <div
-                className="py-3 border-t-2 border-gray-600"
+                className="py-3 border-t-2 border-gray-600 cursor-pointer"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
@@ -159,7 +176,7 @@ const Navbar: React.FC = () => {
               duration={500}
             >
               <div
-                className="py-3 border-t-2 border-b-2 border-gray-600 "
+                className="py-3 border-t-2 border-b-2 border-gray-600 cursor-pointer"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}

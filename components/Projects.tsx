@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
         <div
-          className="card text-center customclass cursor-pointer"
+          className="card text-center customclass cursor-pointer select-none  "
           onClick={() => {
             router.push("https://memoirbynatasha.vercel.app/");
           }}
@@ -25,8 +25,8 @@ const Projects: React.FC = () => {
               className="object-cover h-48 w-full rounded-xl"
             />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Full Stack Blog Site</h2>
+          <div className="card-body ">
+            <h2 className="card-title ">Full Stack Blog Site</h2>
             <p>
               This project is a full stack blog site. It is built with React,
               NextJS, and Firebase. It is a multi page application. Admin panel
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div
-          className="card text-center  customclass cursor-pointer"
+          className="card text-center  customclass cursor-pointer select-none  "
           onClick={() => {
             router.push("https://galleryxd.vercel.app/");
           }}
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div
-          className="card text-center  customclass cursor-pointer"
+          className="card text-center  customclass cursor-pointer select-none  "
           onClick={() => {
             router.push("https://weatherapplite.vercel.app/");
           }}

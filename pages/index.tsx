@@ -11,7 +11,7 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="select-none ">
       <Head>
         <title>Portfolio By Tamjid</title>
         <link rel="icon" type="image/png" href="/portfoliologo.png" />

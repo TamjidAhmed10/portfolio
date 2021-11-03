@@ -13,7 +13,11 @@ const Certification: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
         <div
           className="card text-center shadow-lg bg-indigo-50 cursor-pointer"
-          onClick={() => {router.push("https://codedamn.com/certificate/verify/c360e28b1987edba03edd7fe81967b1053e0f223");}}
+          onClick={() => {
+            router.push(
+              "https://codedamn.com/certificate/verify/c360e28b1987edba03edd7fe81967b1053e0f223"
+            );
+          }}
         >
           <figure className="px-10 pt-10">
             <img
@@ -22,12 +26,16 @@ const Certification: React.FC = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Next.js Fundamentals</h2>
+            <h2 className="card-title select-none">Next.js Fundamentals</h2>
           </div>
         </div>
         <div
           className="card text-center shadow-lg bg-indigo-50 cursor-pointer"
-          onClick={() => { router.push("https://codedamn.com/certificate/verify/fc5b2179946c3b77d9dfa557f2c25f439de2ebeb") }}
+          onClick={() => {
+            router.push(
+              "https://codedamn.com/certificate/verify/fc5b2179946c3b77d9dfa557f2c25f439de2ebeb"
+            );
+          }}
         >
           <figure className="px-10 pt-10">
             <img
@@ -36,14 +44,16 @@ const Certification: React.FC = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">React Tutorials</h2>
+            <h2 className="card-title select-none">React Tutorials</h2>
           </div>
         </div>
         <div
           className="card text-center shadow-lg bg-indigo-50 cursor-pointer"
-          onClick={() => {router.push(
-            "https://www.coursera.org/account/accomplishments/verify/62R3H6LDYZTC"
-          );}}
+          onClick={() => {
+            router.push(
+              "https://www.coursera.org/account/accomplishments/verify/62R3H6LDYZTC"
+            );
+          }}
         >
           <figure className="px-10 pt-10">
             <img
@@ -52,7 +62,7 @@ const Certification: React.FC = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Javascript Fundamentals</h2>
+            <h2 className="card-title select-none">Javascript Fundamentals</h2>
           </div>
         </div>
       </div>
