@@ -30,7 +30,7 @@ const ContactUse: React.FC = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="w-96 grid grid-cols-1 text-center mx-auto form-control px-4"
+          className="w-10/12 md:w-96 grid grid-cols-1 text-center mx-auto form-control px-2"
         >
           <label className="label">
             <span className="label-text">Name</span>
@@ -58,7 +58,11 @@ const ContactUse: React.FC = () => {
             className="input"
             placeholder="Enter Message"
           />
-          <input type="submit" value="Send" className="btn btn-outline w-40 mx-auto mt-6" />
+          <input
+            type="submit"
+            value="Send"
+            className="btn btn-outline w-40 mx-auto mt-6"
+          />
         </form>
       </div>
     </>
