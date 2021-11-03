@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 const Projects: React.FC = () => {
   return (
-    <>
-      <h1 className="text-3xl text-center" id="projects">Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="card text-center shadow-2xl">
+    <div className="bg-customGreen-four py-10">
+      <h1
+        className="text-3xl text-center w-36 bg-customGreen-two mx-auto shadow-2xl"
+        id="projects"
+      >
+        Projects
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+        <div className="card text-center hover:shadow-2xl customclass">
           <figure className="px-10 pt-10">
             <img
               src="https://picsum.photos/id/1005/400/250"
@@ -23,7 +28,7 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="card text-center shadow-2xl">
+        <div className="card text-center shadow-2xl customclass">
           <figure className="px-10 pt-10">
             <img
               src="https://picsum.photos/id/1005/400/250"
@@ -42,7 +47,7 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="card text-center shadow-2xl">
+        <div className="card text-center shadow-2xl customclass">
           <figure className="px-10 pt-10">
             <img
               src="https://picsum.photos/id/1005/400/250"
@@ -62,7 +67,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

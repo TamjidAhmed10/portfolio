@@ -1,43 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useScrollDirection } from "react-use-scroll-direction";
 import { Transition } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useWindowSize } from "react-use";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { isScrollingUp, isScrollingDown } = useScrollDirection();
+  const [direction, setDirection] = useState(true);
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    if (width > 768) {
+      setIsOpen(false);
+    }
+    if (isScrollingUp) {
+      setDirection(true);
+    } else if (isScrollingDown) {
+      setDirection(false);
+      setIsOpen(false);
+    }
+  }, [isScrollingUp, isScrollingDown, width]);
+
   return (
     <>
-      <div className="bg-neutral border-b-2 relative z-10">
-        <div className="navbar shadow-lg text-neutral-content container mx-auto">
+      <div
+        className={
+          "bg-customGreen-one border-b-2 relative sticky z-10  ease-in-out duration-700 " +
+          (direction ? " top-0 " : " -top-36 ")
+        }
+      >
+        <div className="navbar text-black container mx-auto">
           <div className="flex-1 px-2 mx-2">
             <span className="text-lg font-bold">daisyUI</span>
           </div>
           <div className="flex-none hidden px-2 mx-2 lg:flex">
             <div className="flex items-stretch">
-              <Link
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <button className="btn btn-ghost btn-sm rounded-btn">
-                  Intro
-                </button>
-              </Link>
-              <Link
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <button className="btn btn-ghost btn-sm rounded-btn">
-                  About Me
-                </button>
-              </Link>
               <Link
                 activeClass="active"
                 to="projects"
@@ -68,7 +67,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                <a className="btn btn-ghost btn-sm rounded-btn">Contact Me</a>
+                <a className="btn btn-ghost btn-sm rounded-btn">Contact</a>
               </Link>
             </div>
           </div>
@@ -85,7 +84,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="absolute z-10  w-full">
+      <div className="fixed z-10 w-full">
         <Transition
           show={isOpen}
           enter="transition-opacity duration-110"
@@ -96,10 +95,74 @@ const Navbar = () => {
           leaveTo="opacity-0"
         >
           <div className="  bg-neutral grid grid-cols-1 text-neutral-content justify-center text-center divide-y divide-gray-50 md:hidden ">
-            <div className="py-3 ">Likes</div>
-            <div className="py-3 ">Notification</div>
-            <div className="py-3 ">Files</div>
-            <div className="py-3 ">Config</div>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div
+                className="py-3 "
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Likes
+              </div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div
+                className="py-3 "
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Likes
+              </div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div
+                className="py-3 "
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Likes
+              </div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <div
+                className="py-3 "
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Likes
+              </div>
+            </Link>
           </div>
         </Transition>
       </div>
