@@ -8,7 +8,7 @@ const ContactUse: React.FC = () => {
     emailjs
       .sendForm(
         "service_2wdq8se",
-        "template_2eogbjd1",
+        "template_2eogbjd",
         form.current,
         "user_eKRBGOm39MiPHt31D2bfi"
       )

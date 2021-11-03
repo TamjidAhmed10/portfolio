@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from "next/router";
+
 const Projects: React.FC = () => {
+      const router = useRouter();
+
   return (
     <div className="bg-customGreen-four py-10">
       <h1
@@ -9,60 +13,75 @@ const Projects: React.FC = () => {
         Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
-        <div className="card text-center hover:shadow-2xl customclass">
+        <div
+          className="card text-center customclass cursor-pointer"
+          onClick={() => {
+            router.push("https://memoirbynatasha.vercel.app/");
+          }}
+        >
           <figure className="px-10 pt-10">
             <img
-              src="https://picsum.photos/id/1005/400/250"
-              className="rounded-xl"
+              src="/blog_by_nata.png"
+              className="object-cover h-48 w-full rounded-xl"
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">shadow, center, padding</h2>
+            <h2 className="card-title">Full Stack Blog Site</h2>
             <p>
-              Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.
-              Sit sit necessitatibus veritatis sed molestiae voluptates incidunt
-              iure sapiente.
+              This project is a full stack blog site. It is built with React,
+              NextJS, and Firebase. It is a multi page application. Admin panel
+              is separeted from the blog.
             </p>
             <div className="justify-center card-actions">
-              <button className="btn btn-outline btn-accent">More info</button>
+              <button className="btn btn-outline ">More info</button>
             </div>
           </div>
         </div>
-        <div className="card text-center shadow-2xl customclass">
+        <div
+          className="card text-center  customclass cursor-pointer"
+          onClick={() => {
+            router.push("https://galleryxd.vercel.app/");
+          }}
+        >
           <figure className="px-10 pt-10">
             <img
-              src="https://picsum.photos/id/1005/400/250"
-              className="rounded-xl"
+              src="/gallery.png"
+              className="object-cover h-48 w-full rounded-xl"
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">shadow, center, padding</h2>
+            <h2 className="card-title">Photo Gallery App</h2>
             <p>
-              Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.
-              Sit sit necessitatibus veritatis sed molestiae voluptates incidunt
-              iure sapiente.
+              This is a simple full stack gallery project. It is built with
+              React, NextJS , Firebase and Tailwind. Admin can easily add images
+              from a simple admin panel.
             </p>
             <div className="justify-center card-actions">
-              <button className="btn btn-outline btn-accent">More info</button>
+              <button className="btn btn-outline ">More info</button>
             </div>
           </div>
         </div>
-        <div className="card text-center shadow-2xl customclass">
+        <div
+          className="card text-center  customclass cursor-pointer"
+          onClick={() => {
+            router.push("https://weatherapplite.vercel.app/");
+          }}
+        >
           <figure className="px-10 pt-10">
             <img
-              src="https://picsum.photos/id/1005/400/250"
-              className="rounded-xl"
+              src="/weatherApp.png"
+              className="object-cover h-48 w-full rounded-xl"
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">shadow, center, padding</h2>
+            <h2 className="card-title">Weather App</h2>
             <p>
-              Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.
-              Sit sit necessitatibus veritatis sed molestiae voluptates incidunt
-              iure sapiente.
+              This is a frontend weather app. It is built with React, NextJS,
+              and OpenWeatherMap API. It is a single page application. One can
+              search for any city and get the weather.
             </p>
             <div className="justify-center card-actions">
-              <button className="btn btn-outline btn-accent">More info</button>
+              <button className="btn btn-outline">More info</button>
             </div>
           </div>
         </div>

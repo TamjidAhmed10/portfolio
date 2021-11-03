@@ -6,18 +6,23 @@ import Projects from "../components/Projects";
 import Certification from "../components/Certification";
 import ContactUse from "../components/ContactUse";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 
 const Home: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>Portfolio By Tamjid</title>
+        <link rel="icon" type="image/png" href="/portfoliologo.png" />
+      </Head>
       <Navbar />
       <Hero />
       <AboutMe />
       <Projects />
       <Certification />
       <ContactUse />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

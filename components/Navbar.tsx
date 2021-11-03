@@ -31,9 +31,30 @@ const Navbar: React.FC = () => {
           (direction ? " top-0 " : " -top-36 ")
         }
       >
-        <div className="navbar text-black container mx-auto">
-          <div className="flex-1 px-2 mx-2">
-            <span className="text-lg font-bold">daisyUI</span>
+        <div className="navbar text-black md:ml-36 md:mr-28">
+          <div className="flex-1 px-2 mx-2 cursor-pointer">
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <img src="/portfoliologo.png" alt="" className="h-8 w-8 pr-1" />
+            </Link>
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <span className="text-lg font-bold">
+                Portfolio <small className="text-xs">by Tamjid</small>
+              </span>
+            </Link>
           </div>
           <div className="flex-none hidden px-2 mx-2 lg:flex">
             <div className="flex items-stretch">
@@ -94,7 +115,7 @@ const Navbar: React.FC = () => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="  bg-neutral grid grid-cols-1 text-neutral-content justify-center text-center divide-y divide-gray-50 md:hidden ">
+          <div className="  bg-customGreen-one grid grid-cols-1 text-black justify-center text-center  md:hidden ">
             <Link
               activeClass="active"
               to="projects"
@@ -104,63 +125,46 @@ const Navbar: React.FC = () => {
               duration={500}
             >
               <div
-                className="py-3 "
+                className="py-3 border-t-2 border-gray-600"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
               >
-                Likes
+                Projects
               </div>
             </Link>
             <Link
               activeClass="active"
-              to="projects"
+              to="certification1"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
               <div
-                className="py-3 "
+                className="py-3 border-t-2 border-gray-600"
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
               >
-                Likes
+                Certification
               </div>
             </Link>
             <Link
               activeClass="active"
-              to="projects"
+              to="contactuse"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
               <div
-                className="py-3 "
+                className="py-3 border-t-2 border-b-2 border-gray-600 "
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
               >
-                Likes
-              </div>
-            </Link>
-            <Link
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <div
-                className="py-3 "
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
-                Likes
+                Contact
               </div>
             </Link>
           </div>
