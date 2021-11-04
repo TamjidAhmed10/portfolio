@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Projects: React.FC = () => {
-      const router = useRouter();
+  const router = useRouter();
 
   return (
     <div className="bg-customGreen-four py-10">
@@ -20,10 +20,15 @@ const Projects: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
-              src="/blog_by_nata.png"
-              className="object-cover h-48 w-full rounded-xl"
-            />
+            <div className="h-48 w-full relative">
+              <Image
+                src="/blog_by_nata.png"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+                className=""
+              />
+            </div>
           </figure>
           <div className="card-body ">
             <h2 className="card-title ">Full Stack Blog Site</h2>
@@ -44,10 +49,14 @@ const Projects: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
-              src="/gallery.png"
-              className="object-cover h-48 w-full rounded-xl"
-            />
+            <div className="h-48 w-full relative">
+              <Image
+                src="/gallery.png"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </figure>
           <div className="card-body">
             <h2 className="card-title">Photo Gallery App</h2>
@@ -68,10 +77,14 @@ const Projects: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
-              src="/weatherApp.png"
-              className="object-cover h-48 w-full rounded-xl"
-            />
+            <div className="h-48 w-full relative">
+              <Image
+                src="/weatherApp.png"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </figure>
           <div className="card-body">
             <h2 className="card-title">Weather App</h2>

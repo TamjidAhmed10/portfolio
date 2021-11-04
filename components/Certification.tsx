@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image"
 const Certification: React.FC = () => {
     const router = useRouter();
 
@@ -20,10 +21,19 @@ const Certification: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
+            <div className="h-48 w-full relative">
+              <Image
+                src="/nextjs.png"
+                alt="Picture of the author"
+                layout="fill" // required
+                objectFit="cover" // change to suit your needs
+                className="" // just an example
+              />
+            </div>
+            {/* <img
               src="/nextjs.png"
               className="object-cover h-48 w-full rounded-xl"
-            />
+            /> */}
           </figure>
           <div className="card-body">
             <h2 className="card-title select-none">Next.js Fundamentals</h2>
@@ -38,10 +48,19 @@ const Certification: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
+            {/* <img
               src="/react.png"
               className="object-cover h-48 w-full rounded-xl"
-            />
+            /> */}
+            <div className="h-48 w-full relative">
+              <Image
+                src="/react.png"
+                alt="Picture of the author"
+                layout="fill" // required
+                objectFit="cover" // change to suit your needs
+                className="" // just an example
+              />
+            </div>
           </figure>
           <div className="card-body">
             <h2 className="card-title select-none">React Tutorials</h2>
@@ -56,10 +75,19 @@ const Certification: React.FC = () => {
           }}
         >
           <figure className="px-10 pt-10">
-            <img
+            <div className="h-48 w-full relative">
+              <Image
+                src="/CourseEra.png"
+                alt="Picture of the author"
+                layout="fill" // required
+                objectFit="contain" // change to suit your needs
+                className="" // just an example
+              />
+            </div>
+            {/* <img
               src="/CourseEra.png"
               className="object-conatain h-48 w-full rounded-xl"
-            />
+            /> */}
           </figure>
           <div className="card-body">
             <h2 className="card-title select-none">Javascript Fundamentals</h2>
