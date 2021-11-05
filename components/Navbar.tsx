@@ -4,6 +4,7 @@ import { Transition } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useWindowSize } from "react-use";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,16 +13,18 @@ const Navbar: React.FC = () => {
   const { width } = useWindowSize();
 
   useEffect(() => {
-    if (width > 768) {
-      setIsOpen(false);
-    }
     if (isScrollingUp) {
       setDirection(true);
     } else if (isScrollingDown) {
       setDirection(false);
       setIsOpen(false);
     }
-  }, [isScrollingUp, isScrollingDown, width]);
+  }, [isScrollingUp, isScrollingDown]);
+  useEffect(() => {
+    if (width > 768) {
+      setIsOpen(false);
+    }
+  }, [width]);
 
   return (
     <>
@@ -46,14 +49,22 @@ const Navbar: React.FC = () => {
               offset={-70}
               duration={500}
             >
-              <img
+              <Image
+                src="/portfoliologo.png"
+                alt="Picture of the author"
+                width={32}
+                height={32}
+                className=""
+              />
+
+              {/* <img
                 src="/portfoliologo.png"
                 alt=""
                 className="h-8 w-8 pr-1"
                 onClick={() => {
                   setIsOpen(false);
                 }}
-              />
+              /> */}
             </Link>
             <Link
               activeClass="active"
@@ -64,7 +75,7 @@ const Navbar: React.FC = () => {
               duration={500}
             >
               <span
-                className="text-lg font-bold"
+                className="pl-1 text-lg font-bold"
                 onClick={() => {
                   setIsOpen(false);
                 }}

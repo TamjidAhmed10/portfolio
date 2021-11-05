@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
         <div
-          className="card text-center customclass cursor-pointer select-none  "
+          className="card text-center customclass cursor-pointer select-none md:select-text   "
           onClick={() => {
             router.push("https://memoirbynatasha.vercel.app/");
           }}
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div
-          className="card text-center  customclass cursor-pointer select-none  "
+          className="card text-center  customclass cursor-pointer select-none md:select-text   "
           onClick={() => {
             router.push("https://galleryxd.vercel.app/");
           }}
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div
-          className="card text-center  customclass cursor-pointer select-none  "
+          className="card text-center  customclass cursor-pointer select-none md:select-text   "
           onClick={() => {
             router.push("https://weatherapplite.vercel.app/");
           }}

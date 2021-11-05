@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import Image from "next/image"
+import Image from "next/image";
 const Certification: React.FC = () => {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <div className="py-14 customGreen-six ">
@@ -36,7 +36,9 @@ const Certification: React.FC = () => {
             /> */}
           </figure>
           <div className="card-body">
-            <h2 className="card-title select-none">Next.js Fundamentals</h2>
+            <h2 className="card-title select-none md:select-text ">
+              Next.js Fundamentals
+            </h2>
           </div>
         </div>
         <div
@@ -63,7 +65,9 @@ const Certification: React.FC = () => {
             </div>
           </figure>
           <div className="card-body">
-            <h2 className="card-title select-none">React Tutorials</h2>
+            <h2 className="card-title select-none md:select-text ">
+              React Tutorials
+            </h2>
           </div>
         </div>
         <div
@@ -90,7 +94,9 @@ const Certification: React.FC = () => {
             /> */}
           </figure>
           <div className="card-body">
-            <h2 className="card-title select-none">Javascript Fundamentals</h2>
+            <h2 className="card-title select-none md:select-text ">
+              Javascript Fundamentals
+            </h2>
           </div>
         </div>
       </div>
