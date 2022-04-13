@@ -7,6 +7,8 @@ const Hero: React.FC = () => {
           <h1 className=" text-3xl">I am Tamjid Ahmed.</h1>
           <p className="">React Developer</p>
           <p className=" text-sm">Email: tamjidahammad1996@gmail.com</p>
+                    <p className=" text-sm">Github: <a href="https://github.com/TamjidAhmed10">https://github.com/TamjidAhmed10</a></p>
+
         </div>
         <div className="avatar md:col-span-2 m-auto py-4">
           <div className="rounded-full shadow-3xl w-64 h-64 ring ring-offset-1 relative">
