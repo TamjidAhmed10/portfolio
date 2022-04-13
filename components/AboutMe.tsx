@@ -14,8 +14,8 @@ const AboutMe: React.FC = () => {
           latest and most effective technologies. The main stack of technologies
           I specialize in is React plus frameworks/libraries based on this
           library. I am a self-motivated person who is always looking for new
-          challenges and challenges to overcome. i name my stack NFT stack which
-          means NextJS + Firebase + TailwindCSS.
+          challenges and challenges to overcome. my are of expertiese are
+          means NextJS , React Js , Firebase , TailwindCSS , TypeScript , JavaScript , RestAPI , Mongodb , Problem Solving etc.
         </p>
       </div>
     </div>
