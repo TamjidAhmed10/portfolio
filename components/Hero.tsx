@@ -4,8 +4,8 @@ const Hero: React.FC = () => {
     <div className=" bg-customGreen-two w-full text-black py-10" id="hero">
       <div className="grid grid-cols-1 md:grid-cols-4 ">
         <div className="md:col-span-2 m-auto order-last customclass p-10">
-          <h1 className=" text-3xl">Hi I am Tamjid Ahmed.</h1>
-          <p className="">Full Stack React Developer</p>
+          <h1 className=" text-3xl">I am Tamjid Ahmed.</h1>
+          <p className="">React Developer</p>
           <p className=" text-sm">Email: tamjidahammad1996@gmail.com</p>
         </div>
         <div className="avatar md:col-span-2 m-auto py-4">
